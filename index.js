@@ -22,3 +22,19 @@ about.addEventListener("click",()=>{
    alert("coming soon 🏃‍♂️");
 })
 
+const scrollUp = document.getElementById("scrollUp");
+
+scrollDown.addEventListener("click", () => {
+  window.scrollBy({
+    top: window.innerHeight,
+    behavior: 'smooth'
+  });
+});
+
+scrollUp.addEventListener("click", () => {
+  window.scrollBy({
+    top: -window.innerHeight,
+    behavior: 'smooth'
+  });
+});
+
